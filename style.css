@@ -2,8 +2,53 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
+.main {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #0ea5e9;
+  color: white;
+  width: 20vw;
+  height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.dashboard img {
   width: 35px;
+  margin-right: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.options img {
+  width: 25px;
+  margin-right: 15px;
+}
+
+.others {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
 }
