@@ -24,9 +24,24 @@ body {
   gap: 25px;
 }
 
-a {
+.sidebar a {
   text-decoration: none;
   color: white;
+}
+
+.sidebar a:hover {
+  border-bottom: 2px solid #fa9017;
+  border-right: 2px solid #fa9017;
+  padding-right: 3px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn {
+  padding: 0;
+  background-color: transparent;
+  margin: 0;
+  width: 25px;
 }
 
 .dashboard {
@@ -53,10 +68,11 @@ a {
   margin-bottom: 10px;
 }
 
-.image{
+.image {
   filter: invert(100%);
 }
-.options img{
+
+.options img {
   width: 20px;
   margin-right: 15px;
 }
@@ -79,7 +95,7 @@ a {
   box-shadow: 2px 2px 2px #b5b5be;
 }
 
-.search img{
+.search img {
   width: 20px;
   margin-right: 10px;
   margin-top: 8px;
@@ -104,11 +120,11 @@ a {
   gap: 20px;
 }
 
-.part2 img{
+.part2 img {
   width: 20px;
 }
 
-.part2 img.dp{
+.part2 img.dp {
   width: 35px;
   border-radius: 20px;
 }
@@ -141,15 +157,11 @@ input {
 .left {
   display: flex;
   align-items: center;
+  font-weight: 700;
 }
 
 span {
   margin: 0;
-}
-
-.left {
-  display: flex;
-  font-weight: 700;
 }
 
 .end {
@@ -158,7 +170,7 @@ span {
   justify-content: space-between;
 }
 
-button{
+button {
   padding: 7px 20px;
   width: 80px;
   border-radius: 20px;
@@ -167,6 +179,14 @@ button{
   color: white;
   margin-left: 15px;
   cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+  transition-property: transform;
+}
+
+button:hover {
+  color: #fa9017;
+  transform: scale(1.1);
 }
 
 .right {
@@ -174,11 +194,21 @@ button{
 }
 
 .grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: white;
-  height: 20vh;
+  height: 21vh;
   margin: 15px;
   border-left: 0.7rem solid #fa9017;
   border-radius: 8px;
+  position: relative;
+  transition: 0.5s;
+  transition-property: transform;
+}
+
+.grid:hover{
+  transform: scale(1.04);
 }
 
 .views {
@@ -186,26 +216,33 @@ button{
   align-items: center;
   position: relative;
   padding: 10px;
+  justify-content: right;
 }
 
 .views img {
   width: 20px;
   margin-right: 20px;
-  margin-bottom: 15px;
+  position: relative;
+  transition: 0.5s;
+  transition-property: transform;
 }
 
-.grid{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.views img:hover{
+  transform: scale(1.5);
+}
+
+h4 {
+  font-size: 15px;
 }
 
 .grid-text {
   padding: 5px 10px;
+  margin-top: 15px;
 }
 
-.grid-text p{
-  font-size: 15px;
+.grid-text p {
+  font-size: 12px;
+  margin-top: 3px;
 }
 
 .grids {
@@ -214,9 +251,8 @@ button{
   grid-template-rows: repeat(3, 1fr);
 }
 
-.box {
+.end-right div {
   background-color: white;
-  height: 30vh;
   width: 20vw;
   border-radius: 7px;
 }
@@ -226,10 +262,9 @@ button{
   justify-content: space-between;
 }
 
-.end-right{
+.end-right {
   display: grid;
   align-items: center;
   justify-content: space-between;
   margin-right: 15px;
 }
-
