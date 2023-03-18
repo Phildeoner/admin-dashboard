@@ -173,3 +173,63 @@ button{
   padding-right: 35px;
 }
 
+.grid {
+  background-color: white;
+  height: 20vh;
+  margin: 15px;
+  border-left: 0.7rem solid #fa9017;
+  border-radius: 8px;
+}
+
+.views {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+
+.views img {
+  width: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid-text {
+  padding: 5px 10px;
+}
+
+.grid-text p{
+  font-size: 15px;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.box {
+  background-color: white;
+  height: 30vh;
+  width: 20vw;
+  border-radius: 7px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.end-right{
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 15px;
+}
+
