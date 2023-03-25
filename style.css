@@ -19,6 +19,9 @@ body {
   background-color: #0ea5e9;
   color: white;
   gap: 25px;
+  width: 270px;
+  max-width: 280px;
+  min-width: 170px;
 }
 
 .sidebar a {
@@ -194,6 +197,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 button {
@@ -280,7 +284,7 @@ h4 {
 
 .grids {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(1, 1fr);
 }
 
